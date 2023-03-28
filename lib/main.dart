@@ -15,9 +15,12 @@ class MyApp extends StatelessWidget {
           title: const Text('Material App Bar'),
         ),
         body: Column(
-          children: const [
-            FormText(),
-            Center(
+          children: [
+            Container(
+              padding: const EdgeInsets.all(20),
+              child: const FormText(),
+            ),
+            const Center(
               child: Text('Hello World'),
             ),
           ],
